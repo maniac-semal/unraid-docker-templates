@@ -12,8 +12,8 @@
   <Overview>A fork of mcpe_viz, now maintained by Jasper Wan.[br]Bedrock Viz is a tool that parses Minecraft Bedrock Edition world files. It creates overview images from the world files, and reports lots of details on your world.</Overview>
   <Category>GameServers</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/maniac-semal/unraid-docker-templates/bedrock-viz.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/maniac-semal/unraid-docker-templates//img/minecraft_bedrock_viz.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/maniac-semal/unraid-docker-templates/main/bedrock-viz.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/maniac-semal/unraid-docker-templates/main/img/minecraft_bedrock_viz.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
