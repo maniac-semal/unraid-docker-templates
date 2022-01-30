@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>plex</Name>
+  <Name>Bedrock-viz</Name>
   <Repository>unmania/bedrock-viz-docker</Repository>
   <Registry>https://hub.docker.com/r/unmania/bedrock-viz-docker/</Registry>
   <Network>host</Network>
