@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RPi NetBoot</Name>
+  <Repository>unmania/rpi-netboot</Repository>
+  <Registry>https://hub.docker.com/r/unmania/rpi-netboot/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://github.com/maniac-semal/rpi-netboot-docker</Project>
+  <Overview>RPI Netboot</Overview>
+  <Category>Network:DNS</Category>
+  <WebUI></WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/maniac-semal/unraid-docker-templates/main/rpi-netboot.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/maniac-semal/unraid-docker-templates/main/img/rpi-netboot.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <Description>.</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>67</HostPort>
+        <ContainerPort>67</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>67</HostPort>
+        <ContainerPort>67</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>111</HostPort>
+        <ContainerPort>111</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>111</HostPort>
+        <ContainerPort>111</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>2049</HostPort>
+        <ContainerPort>2049</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>2049</HostPort>
+        <ContainerPort>2049</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/appdata</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+  </Environment>
+  <Labels/>
+  <Config Name="DNS Port1 TCP" Target="53" Default="53" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
+  <Config Name="DNS Port1 UDP" Target="53" Default="53" Mode="udp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
+  <Config Name="DNS Port2 TCP" Target="67" Default="67" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">67</Config>
+  <Config Name="DNS Port2 UDP" Target="67" Default="67" Mode="udp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">67</Config>
+  <Config Name="NFS Port1 TCP" Target="111" Default="111" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">111</Config>
+  <Config Name="NFS Port1 UDP" Target="111" Default="111" Mode="udp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">111</Config>
+  <Config Name="NFS Port2 TCP" Target="2049" Default="2049" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">2049</Config>
+  <Config Name="NFS Port2 UDP" Target="2049" Default="2049" Mode="udp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">2049</Config>
+  <Config Name="Appdata" Target="/appdata" Default="" Mode="rw" Description="Appdata" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/rpi-netboot</Config>
+</Container>
